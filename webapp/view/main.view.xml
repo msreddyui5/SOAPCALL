@@ -1,0 +1,33 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.sapSOAPCALL.controller.main" displayBlock="true">
+	<App>
+		<pages>
+			
+		
+			
+			<Page title="{i18n>title}">
+				<content>
+					   <VBox width="100%" direction="Column" id="__vbox0">
+				        <items>
+				            <HBox width="100%" id="__hbox0">
+				                <items>
+				                    <Label text="Number 1" width="100%" id="__label0"/>
+				                    <Input width="100%" id="num1" type="Number"/>
+				                </items>
+				            </HBox>
+				            <HBox xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" id="__hbox0_copy">
+				                <items>
+				                    <Label text="Number 2" width="100%" id="__label0_copy"/>
+				                    <Input width="100%" id="num2" type="Number"/>
+				                    </items>
+				                
+				            </HBox>
+				            <Button text="Call SOAP" width="100px" id="__button0" press="onCallSOAP"/>
+				        </items>
+				    </VBox>
+				    <Button text="Call REST" press="onRESTCall"></Button>
+				    <List id="restdata"></List>
+					</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
